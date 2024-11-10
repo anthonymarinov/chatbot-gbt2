@@ -46,7 +46,7 @@ The backend runs on **`localhost:5000`**. The front end runs on and can be found
 ## Usage
 
 - Open the frontend application in a browser at **`https://localhost:3000`**.
-- Enter a message and oress "Send" to interact with the chatbot.
+- Enter a message and press "Send" to interact with the chatbot.
 - The chatbot response is generated using GPT-2 and displayed below the user's message.
 
 ## API Endpoints
