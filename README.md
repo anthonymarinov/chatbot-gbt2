@@ -29,7 +29,7 @@ This project is a chatbot application that uses a GPT-2 model to generate conver
    ```bash
    pip install flask flask-cors transformers tensorflow
 
-2. Start the Flask backend server:
+2. Start the Flask backend server in the terminal:
 3. ```bash
    python app.py
 
@@ -37,7 +37,7 @@ This project is a chatbot application that uses a GPT-2 model to generate conver
 
 1. Make sure node.js is downloaded, and npm is accessible in the terminal. This repository contains the necessary configuration files to run the application. 
 
-2. Start the React application:
+2. Start the React application in a new terminal:
    ```bash
    npm run dev
 
