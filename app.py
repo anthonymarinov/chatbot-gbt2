@@ -10,7 +10,7 @@ app = Flask( __name__ )
 CORS( app )
 
 tokenizer = GPT2Tokenizer.from_pretrained( 'openai-community/gpt2' )
-model = TFGPT2LMHeadModel.from_pretrained( 'openai-community/gpt2-large' )
+model = TFGPT2LMHeadModel.from_pretrained( 'openai-community/gpt2' )
 
 @app.route( '/chatbot', methods=[ 'POST' ] )
 def chatbot():
@@ -20,7 +20,6 @@ def chatbot():
                                 max_length=maxLength, 
                                 num_return_sequences=numReturnSequences,
                                 eos_token_id=tokenizer.eos_token_id,
-                                temperature=0.7,
                                 no_repeat_ngram_size=2,
                                 pad_token_id=tokenizer.eos_token_id )
     response = tokenizer.decode( outputIDs[ 0 ] )
